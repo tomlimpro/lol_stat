@@ -74,6 +74,14 @@ x-airflow-common:
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
     # The following line can be used to set a custom config file, stored in the local config folder
     AIRFLOW_CONFIG: '/opt/airflow/config/airflow.cfg'
+
+    # ============== 
+    # RIOT GAMES API CONFIGURATION
+    # ==============
+    # La clé API sera automatiquement disponible comme variable d'environnement
+    # et comme Airflow Variable 
+    RIOT_API_KEY: ${RIOT_API_KEY}
+    AIRLFLOW_VAR_RIOT_API_KEY: ${RIOT_API_KEY}
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
