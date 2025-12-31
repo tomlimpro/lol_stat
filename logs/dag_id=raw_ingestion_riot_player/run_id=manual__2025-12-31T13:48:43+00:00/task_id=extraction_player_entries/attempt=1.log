@@ -1,0 +1,23 @@
+{"timestamp":"2025-12-31T13:48:44.402037Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-12-31T13:48:44.402450Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/raw/player/raw_player_ingestion.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-12-31T13:48:44.419831Z","level":"info","event":"###########################","logger":"root","filename":"raw_player_ingestion.py","lineno":37}
+{"timestamp":"2025-12-31T13:48:44.419888Z","level":"info","event":"EXTRATION : MASTER ...","logger":"root","filename":"raw_player_ingestion.py","lineno":38}
+{"timestamp":"2025-12-31T13:48:44.419914Z","level":"info","event":"###########################","logger":"root","filename":"raw_player_ingestion.py","lineno":39}
+{"timestamp":"2025-12-31T13:48:45.470824Z","level":"info","event":"✅ MASTER : 205 entrées récupérées.","logger":"root","filename":"raw_player_ingestion.py","lineno":46}
+{"timestamp":"2025-12-31T13:48:45.470922Z","level":"info","event":"Temps de réponse : 1.05s","logger":"root","filename":"raw_player_ingestion.py","lineno":47}
+{"timestamp":"2025-12-31T13:48:45.470970Z","level":"info","event":"Pour Tier MASTER : 205 entrées récupérées.","logger":"root","filename":"raw_player_ingestion.py","lineno":62}
+{"timestamp":"2025-12-31T13:48:45.471012Z","level":"info","event":"###########################","logger":"root","filename":"raw_player_ingestion.py","lineno":37}
+{"timestamp":"2025-12-31T13:48:45.471050Z","level":"info","event":"EXTRATION : GRANDMASTER ...","logger":"root","filename":"raw_player_ingestion.py","lineno":38}
+{"timestamp":"2025-12-31T13:48:45.471074Z","level":"info","event":"###########################","logger":"root","filename":"raw_player_ingestion.py","lineno":39}
+{"timestamp":"2025-12-31T13:48:45.800022Z","level":"info","event":"✅ GRANDMASTER : 205 entrées récupérées.","logger":"root","filename":"raw_player_ingestion.py","lineno":46}
+{"timestamp":"2025-12-31T13:48:45.800300Z","level":"info","event":"Temps de réponse : 0.24s","logger":"root","filename":"raw_player_ingestion.py","lineno":47}
+{"timestamp":"2025-12-31T13:48:45.800424Z","level":"info","event":"Pour Tier GRANDMASTER : 205 entrées récupérées.","logger":"root","filename":"raw_player_ingestion.py","lineno":62}
+{"timestamp":"2025-12-31T13:48:45.800506Z","level":"info","event":"###########################","logger":"root","filename":"raw_player_ingestion.py","lineno":37}
+{"timestamp":"2025-12-31T13:48:45.800564Z","level":"info","event":"EXTRATION : CHALLENGER ...","logger":"root","filename":"raw_player_ingestion.py","lineno":38}
+{"timestamp":"2025-12-31T13:48:45.800694Z","level":"info","event":"###########################","logger":"root","filename":"raw_player_ingestion.py","lineno":39}
+{"timestamp":"2025-12-31T13:48:46.116366Z","level":"info","event":"✅ CHALLENGER : 205 entrées récupérées.","logger":"root","filename":"raw_player_ingestion.py","lineno":46}
+{"timestamp":"2025-12-31T13:48:46.116598Z","level":"info","event":"Temps de réponse : 0.31s","logger":"root","filename":"raw_player_ingestion.py","lineno":47}
+{"timestamp":"2025-12-31T13:48:46.116674Z","level":"info","event":"Pour Tier CHALLENGER : 205 entrées récupérées.","logger":"root","filename":"raw_player_ingestion.py","lineno":62}
+{"timestamp":"2025-12-31T13:48:46.116739Z","level":"info","event":"","logger":"root","filename":"raw_player_ingestion.py","lineno":63}
+{"timestamp":"2025-12-31T13:48:46.117182Z","level":"info","event":"✅ Extraction terminée pour CHALLENGER!","logger":"root","filename":"raw_player_ingestion.py","lineno":64}
+{"timestamp":"2025-12-31T13:48:46.118822Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":217}

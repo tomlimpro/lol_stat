@@ -1,0 +1,23 @@
+{"timestamp":"2025-12-31T13:51:57.958500Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-12-31T13:51:57.959033Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/raw/player/raw_player_ingestion.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-12-31T13:51:57.989461Z","level":"info","event":"#########################################","logger":"root","filename":"raw_player_ingestion.py","lineno":37}
+{"timestamp":"2025-12-31T13:51:57.989538Z","level":"info","event":"🪏 EXTRACTION : MASTER ...","logger":"root","filename":"raw_player_ingestion.py","lineno":38}
+{"timestamp":"2025-12-31T13:51:57.989574Z","level":"info","event":"#########################################","logger":"root","filename":"raw_player_ingestion.py","lineno":39}
+{"timestamp":"2025-12-31T13:51:59.425062Z","level":"info","event":"✅ MASTER : 205 entrées récupérées.","logger":"root","filename":"raw_player_ingestion.py","lineno":46}
+{"timestamp":"2025-12-31T13:51:59.425836Z","level":"info","event":"Temps de réponse : 1.43s","logger":"root","filename":"raw_player_ingestion.py","lineno":47}
+{"timestamp":"2025-12-31T13:51:59.426187Z","level":"info","event":"Pour Tier MASTER : 205 entrées récupérées.","logger":"root","filename":"raw_player_ingestion.py","lineno":62}
+{"timestamp":"2025-12-31T13:51:59.426486Z","level":"info","event":"#########################################","logger":"root","filename":"raw_player_ingestion.py","lineno":37}
+{"timestamp":"2025-12-31T13:51:59.426717Z","level":"info","event":"🪏 EXTRACTION : GRANDMASTER ...","logger":"root","filename":"raw_player_ingestion.py","lineno":38}
+{"timestamp":"2025-12-31T13:51:59.426934Z","level":"info","event":"#########################################","logger":"root","filename":"raw_player_ingestion.py","lineno":39}
+{"timestamp":"2025-12-31T13:51:59.745663Z","level":"info","event":"✅ GRANDMASTER : 205 entrées récupérées.","logger":"root","filename":"raw_player_ingestion.py","lineno":46}
+{"timestamp":"2025-12-31T13:51:59.746086Z","level":"info","event":"Temps de réponse : 0.31s","logger":"root","filename":"raw_player_ingestion.py","lineno":47}
+{"timestamp":"2025-12-31T13:51:59.746397Z","level":"info","event":"Pour Tier GRANDMASTER : 205 entrées récupérées.","logger":"root","filename":"raw_player_ingestion.py","lineno":62}
+{"timestamp":"2025-12-31T13:51:59.746587Z","level":"info","event":"#########################################","logger":"root","filename":"raw_player_ingestion.py","lineno":37}
+{"timestamp":"2025-12-31T13:51:59.746786Z","level":"info","event":"🪏 EXTRACTION : CHALLENGER ...","logger":"root","filename":"raw_player_ingestion.py","lineno":38}
+{"timestamp":"2025-12-31T13:51:59.746947Z","level":"info","event":"#########################################","logger":"root","filename":"raw_player_ingestion.py","lineno":39}
+{"timestamp":"2025-12-31T13:52:00.002271Z","level":"info","event":"✅ CHALLENGER : 205 entrées récupérées.","logger":"root","filename":"raw_player_ingestion.py","lineno":46}
+{"timestamp":"2025-12-31T13:52:00.002606Z","level":"info","event":"Temps de réponse : 0.25s","logger":"root","filename":"raw_player_ingestion.py","lineno":47}
+{"timestamp":"2025-12-31T13:52:00.002782Z","level":"info","event":"Pour Tier CHALLENGER : 205 entrées récupérées.","logger":"root","filename":"raw_player_ingestion.py","lineno":62}
+{"timestamp":"2025-12-31T13:52:00.002926Z","level":"info","event":"","logger":"root","filename":"raw_player_ingestion.py","lineno":63}
+{"timestamp":"2025-12-31T13:52:00.003065Z","level":"info","event":"✅ Extraction terminée pour CHALLENGER!","logger":"root","filename":"raw_player_ingestion.py","lineno":64}
+{"timestamp":"2025-12-31T13:52:00.004236Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":217}

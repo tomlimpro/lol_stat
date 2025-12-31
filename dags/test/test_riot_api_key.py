@@ -56,7 +56,7 @@ def test_riot_api_key():
             api_key = os.getenv("RIOT_API_KEY") or Variable.get('RIOT_API_KEY')
             url = f"https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key={api_key}"
             headers = {"X-Riot-Token" : api_key}
-            logging.info(f"Test d'API : {url}")
+            logging.info(f"Test d'API")
             response = requests.get(url, headers = headers, timeout=10)
             result = {
                 'status_code' : response.status_code,
