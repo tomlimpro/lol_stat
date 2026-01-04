@@ -149,11 +149,35 @@ def raw_ingestion_player():
                 conn.rollback()
                 logging.error(f"❌ Erreur lors du chargement : {str(e)}")
                 raise
-            else:
+        finally:
                 if 'cursor' in locals():
                     cursor.close()
                 if 'conn' in locals():
                     conn.close()
+    @task
+    def validate_data(load_stats: dict) -> dict:
+        try:
+            pg_hook = PostgresHook(postgres_conn_id = POSTGRES_CONN_ID)
+            extraction_date = load_stats['extraction_date']
+            expected_count = load_stats['inserted']
+            logging.info("✅ VALIDATION DES DONNEES")
+            # Verifier le nombre d'enregistrement
+            count_query = """
+                SELECT COUNT(*)
+                FROM RAW.PLAYER_ENTRIES_RAW
+                WHERE extraction_date = %s
+            """
+            actual_count = pg_hook.get_first(count_query, parameters =(extraction_date,))[0]
+            logging.info(f"Attendu : {expected_count} | Trouvé : {actual_count}")
+            results = {
+                'expected_count' : expected_count,
+                'actual_count' : actual_count
+            }
+            return results
+        except Exception as e:
+            logging.error(f"Erreur de la validation : {str(e)}")
+            raise
     extracted_data = extraction_player_entries()
     loaded_data = load_player_entries(extracted_data)
+    validation_data = validate_data(loaded_data)
 raw_ingestion_player()
